@@ -20,12 +20,13 @@
     "pretest": "npm run build -- --test",
     "pretest:prod": "npm run build:prod -- --test",
     "build": "node script/build.js",
-    "build:prod": "npm run build -- --prod",
+    "build:prod": "npm run build",
     "clean": "node script/clean.js",
     "lint": "eslint '**/*.{js,mjs}' --fix --quiet",
     "pub": "node script/publish.js",
     "test": "node script/test.js",
-    "test:prod": "node script/test.js --prod"
+    "test:prod": "node script/test.js --prod",
+    "_build:prod": "npm run build -- --prod"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
